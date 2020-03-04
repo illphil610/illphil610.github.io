@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head type="text/javascript">
+      <title>The Joy of Painting</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta charset="UTF-8" />
+      <!-- Branch Init-->
+      <script type="text/javascript">
+         var options = {};
+         (function (b, r, a, n, c, h, _, s, d, k) {
+           if (!b[n] || !b[n]._q) {
+             for (; s < _.length;) c(h, _[s++]);
+             d = r.createElement(a);
+             d.async = 1;
+             d.src = "https://cdn.branch.io/branch-latest.min.js";
+             k = r.getElementsByTagName(a)[0];
+             k.parentNode.insertBefore(d, k);
+             b[n] = h
+           }
+         })(window, document, "script", "branch", function (b, r) {
+             b[r] = function () {
+               b._q.push([r, arguments])
+             }
+           }, {
+             _q: [],
+             _v: 1
+           },
+           "addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode"
+           .split(" "), 0);
+
+         branch.init('key_live_daNSy4T477GKMVSk648EompoFFcVmrWx', options, function (err, data) {
+           console.log(data)
+         });
+
+      </script>
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+      <style>
+         body {
+         font-family: "Helvetica Neue";
+         }
+      </style>
+   </head>
+   <body>
+      <!-- Navbar -->
+      <div class="w3-top">
+         <div class="w3-bar w3-white w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
+               onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="test-webpage.html" class="w3-bar-item w3-button w3-padding-large">The Joy of Painting</a>
+            <div class="w3-dropdown-hover w3-hide-small">
+               <button class="w3-padding-large w3-button" title="Sections">
+               SECTIONS<i class="fa fa-caret-down"></i>
+               </button>
+               <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                  <a href="index.html" class="w3-bar-item w3-button">FIRST</a>
+                  <a href="index.html" class="w3-bar-item w3-button">SECOND</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+      <div id="navigation" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top"
+         style="margin-top:46px">
+         <a href="test-webpage.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
+         <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FIRST</a>
+         <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SECOND</a>
+      </div>
+      <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about"></div>
+      <!-- Page content -->
+      <div class="w3-content" style="max-width:2000px;margin-top:46px">
+      <!-- LOGO -->
+      <div class=" w3-display-container w3-center">
+         <img src="bob-ross.jpg" style="height:80vmin; width:90vmin" />
+         <div class="w3-display-bottommiddle w3-container w3-padding-32 w3-hide-small"></div>
+      </div>
+
+
+      <script>
+         // Used to toggle the menu on small screens when clicking on the menu button
+         function myFunction() {
+           var x = document.getElementById("navigation");
+           if (x.className.indexOf("w3-show") == -1) {
+             x.className += " w3-show";
+           } else {
+             x.className = x.className.replace(" w3-show", "");
+           }
+         }
+      </script>
+   </body>
+</html>
